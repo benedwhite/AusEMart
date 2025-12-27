@@ -20,7 +20,7 @@ jobs:
             - run: dotnet build --configuration Release
               name: build
 
-            - run: dotnet public --configuration Release -o ./webstore
+            - run: dotnet publish --configuration Release -o ./webstore
               name: publish
 
             - name: upload build artifact
